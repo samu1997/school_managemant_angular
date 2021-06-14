@@ -1,0 +1,26 @@
+<div class="login">
+    <div class="form">
+        <div class="header">
+            <h1 class="text-center">LOGIN</h1>
+
+            <div class="main-form">
+                <div class="p-fluid">
+                    <div class="p-field">
+                        <label for="email">Enail/Username</label>
+                        <input id="email" type="email" pInputText> 
+                    </div><br>
+                    <div class="p-field">
+                        <label for="password">Password</label>
+                        <p-password [(ngModel)]="value3" [toggleMask]="true"></p-password>
+                    </div><br>
+                    <div class="p-field pb-2">
+                        <p-checkbox [(ngModel)]="checked" [binary]="true" label="Remember Me" inputId="binary"></p-checkbox>
+                    </div><br>
+                    <div class="p-field">
+                        <p-button label="Login" icon="pi pi-users" styleClass="p-button-warning"></p-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
